@@ -1,3 +1,5 @@
+<%= ERB.new(File.read(File.expand_path("_header.erb",File.dirname(file)))).result(binding) -%>
+
 <%-
 @pin = "release a=#{@name}" # default value
 if @pin_release.length > 0
